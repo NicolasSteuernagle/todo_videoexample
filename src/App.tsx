@@ -57,7 +57,7 @@ const App: FC = () => {
             onChange={handleChange}
           />
           <input
-            type = "number"
+            type = "text"
             placeholder="Priority level..."
             name = "priority"
             value = {priority}
