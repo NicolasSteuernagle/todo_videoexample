@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/todo_videoexample/static/css/main.f6f4c963.chunk.css",
+    "main.js": "/todo_videoexample/static/js/main.d9cb48ff.chunk.js",
+    "main.js.map": "/todo_videoexample/static/js/main.d9cb48ff.chunk.js.map",
+    "runtime-main.js": "/todo_videoexample/static/js/runtime-main.d1e5f520.js",
+    "runtime-main.js.map": "/todo_videoexample/static/js/runtime-main.d1e5f520.js.map",
+    "static/js/2.13364f75.chunk.js": "/todo_videoexample/static/js/2.13364f75.chunk.js",
+    "static/js/2.13364f75.chunk.js.map": "/todo_videoexample/static/js/2.13364f75.chunk.js.map",
+    "static/js/3.479f4b42.chunk.js": "/todo_videoexample/static/js/3.479f4b42.chunk.js",
+    "static/js/3.479f4b42.chunk.js.map": "/todo_videoexample/static/js/3.479f4b42.chunk.js.map",
+    "index.html": "/todo_videoexample/index.html",
+    "static/css/main.f6f4c963.chunk.css.map": "/todo_videoexample/static/css/main.f6f4c963.chunk.css.map",
+    "static/js/2.13364f75.chunk.js.LICENSE.txt": "/todo_videoexample/static/js/2.13364f75.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d1e5f520.js",
+    "static/js/2.13364f75.chunk.js",
+    "static/css/main.f6f4c963.chunk.css",
+    "static/js/main.d9cb48ff.chunk.js"
+  ]
+}
