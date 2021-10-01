@@ -10,6 +10,7 @@ const App: FC = () => {
   const [task, setTask] = useState<string>("");
   const [deadline, setDealine] = useState<number>(0);
   const [priority, setPriority] = useState<string>("");
+  const [notes, setNotes] = useState<string>("");
   const [todoList, setTodoList] = useState<ITask[]>([]);
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
@@ -17,17 +18,20 @@ const App: FC = () => {
       setTask(event.target.value);
     } else if(event.target.name === "deadline")
       setDealine(Number(event.target.value));
+      else if(event.target.name === "priority")
+        setPriority(event.target.value);
       else{
-        setPriority((event.target.value));
+        setNotes((event.target.value));
       }
   };
 
   const addTask = (): void => {
-    const newTask = { taskName: task, deadline: deadline, priority: priority };
+    const newTask = { taskName: task, deadline: deadline, priority: priority, notes: notes };
     setTodoList([...todoList, newTask]);
     setTask("");
     setDealine(0);
     setPriority("");
+    setNotes("");
   };
 
   const completeTask = (taskNameToDelete: string): void => {
@@ -62,6 +66,13 @@ const App: FC = () => {
             name = "priority"
             value = {priority}
             onChange={handleChange}
+            />
+            <input
+              type = "text"
+              placeholder="Notes..."
+              name = "notes"
+              value = {notes}
+              onChange={handleChange}
             />
         </div>
         <button onClick={addTask}>Add Task</button>
