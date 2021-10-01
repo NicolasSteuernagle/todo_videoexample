@@ -11,17 +11,19 @@ const TodoTask = ({ task, completeTask }: Props) => {
     <div className="task">
       <div className="content">
         <span>{task.taskName}</span>
-        <span>{task.deadline}</span>
+        <span>Days Until Due: {task.deadline}</span>
+        <span>Priority Level: {task.priority}</span>
       </div>
       <button
         onClick={() => {
           completeTask(task.taskName);
         }}
       >
-        X
+          Clear Task
       </button>
     </div>
   );
 };
+
 
 export default TodoTask;
