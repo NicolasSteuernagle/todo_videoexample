@@ -21,7 +21,7 @@ const App: FC = () => {
       else if(event.target.name === "priority")
         setPriority(event.target.value);
       else{
-        setNotes((event.target.value));
+        setNotes(event.target.value);
       }
   };
 
